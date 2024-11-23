@@ -1,0 +1,7 @@
+/* styles/globals.css */
+body {
+  background-color: #FFFFFF; /* Aplica o fundo branco em toda a página */
+  font-family: 'Maven Pro', sans-serif;
+  margin: 0;
+  padding: 20px;
+}

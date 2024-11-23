@@ -1,0 +1,313 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/page.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************/
+/* page.module.css */
+
+/* Container principal */
+.page_page__ZU32B {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: flex-start;
+  margin-top: 20px;
+  background-color: #ffffff; /*cor da borda*/
+  font-family: 'Maven Pro', sans-serif;
+  padding: 20px;
+ height: 100vh;
+ width: 100vw;
+}
+
+/* Estilos para as mini abas */
+.page_modal__OJIkq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; /* Fundo branco para as mini abas */
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px; /* Bordas arredondadas */
+  width: 320px; /* Ajustado para ser consistente */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+}
+
+/* Ajuste para o título nas mini abas */
+.page_modal__OJIkq h3 {
+  margin-bottom: 20px;
+  color: #2c3e50; /* Azul escuro */
+}
+
+/* Estilos para os campos dentro da mini aba */
+.page_field___uHMi {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Para ocupar a largura total */
+}
+
+.page_field___uHMi label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #34495e; /* Azul claro */
+}
+
+.page_field___uHMi input[type="radio"],
+.page_field___uHMi input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.page_field___uHMi input[type="text"],
+.page_field___uHMi input[type="date"],
+.page_field___uHMi textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s; /* Efeito de transição */
+}
+
+.page_field___uHMi input[type="text"]:focus,
+.page_field___uHMi input[type="date"]:focus,
+.page_field___uHMi textarea:focus.page_field___uHMi input[type="text"]:focus,
+.page_field___uHMi input[type="date"]:focus,
+.page_field___uHMi textarea:focus {
+  border-color: #4CAF50; /* Cor verde ao focar */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Sombra verde ao focar */
+}
+
+/* Estilo para o botão de adicionar categoria */
+.page_addCategory__AvdQ9 {
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #1a1103; /* Cor laranja */
+  color: white;
+  border: none;
+  transition: background-color 0.3s; /* Efeito de transição */
+}
+
+.page_addCategory__AvdQ9:hover {
+  background-color: #000000; /* Cor laranja mais escura ao passar o mouse */
+}
+
+/* Estilo para inputs de valor e data */
+.page_valorInput__mWzW7,
+.page_dataInput__AHLTx {
+  width: 100%;
+}
+
+.page_button__vnlhW {
+  /* Estilos existentes para o botão */
+  background-color: rgb(255, 255, 255); /* Cor de fundo escura */
+  color: rgb(8, 8, 8); /* Cor do texto em branco para contraste */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s; /* Para uma transição suave */
+  border-radius: 5px; /* Adiciona bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+.page_button__vnlhW:hover {
+  background-color: rgb(50, 50, 50); /* Cor de fundo ao passar o mouse */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+}
+
+.page_button__vnlhW:hover {
+  background-color: rgb(131, 134, 131); /* Cor de fundo ao passar o mouse */
+}
+
+.page_editButton__XqFB4 {
+  /* Estilos específicos para o botão de editar */
+  background-color: orange; /* Cor de fundo padrão */
+  color: white; /* Cor do texto */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Para uma transição suave */
+}
+
+.page_editButton__XqFB4:hover {
+  background-color: darkorange; /* Cor de fundo ao passar o mouse */
+}
+
+.page_deleteButton__Vg31V {
+  /* Estilos específicos para o botão de excluir */
+  background-color: red; /* Cor de fundo padrão */
+  color: white; /* Cor do texto */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Para uma transição suave */
+}
+
+.page_deleteButton__Vg31V:hover {
+  background-color: darkred; /* Cor de fundo ao passar o mouse */
+} 
+
+/* A TELA DO NOVA RECEITA/DESPESA */
+.page_modal__OJIkq {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #f3ead8;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 250px; /* largura diminuída */
+  height: 785px;
+  top: 289px;
+  left: 30px;
+  gap: 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+}
+
+/*TITULO- NOVA RECEITA/DESPESA */
+.page_modal__OJIkq h3 {
+  margin-bottom: 20px;
+  color: #000000; /* Azul escuro */
+  text-align: center;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 24px; /* Aumentar o tamanho da fonte */
+  letter-spacing: 1px; /* Aumentar o espaçamento entre letras */
+  line-height: 1.5; /* Aumentar o espaçamento entre linhas */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Adicionar sombra ao texto */
+}
+
+.page_titulos__nPtLH h1 {
+  color: rgb(0, 0, 0); /* Altere para a cor desejada */
+  width: 400px;
+  height: 10px;
+  margin-top: 0px;
+  gap: 0px;
+  opacity: 0px; 
+  font-family: 'Maven Pro', sans-serif;
+}
+
+
+.page_titulos__nPtLH h2 {
+  color: #8C8C8C; /* Altere para a cor desejada */
+  width: 201px;
+  height: 40px;
+  top: 91px;
+  left: 49px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: 'Maven Pro', sans-serif;}
+
+#page_titulo_entrada__iu9ln{
+  color: #8C8C8C;
+}
+ 
+/* PARTE DE REGISTROS */
+.page_container__aoG4z {
+  width: 963px;
+  height: 785px;
+  margin-top: 20px;
+  padding: 0px;
+  background-color: white; /* Adicionando um fundo para destacar a tabela */
+  border-radius: 10px; /* Arredondando os cantos da caixa */
+}
+
+.page_title__3jonF {
+  font-size: 26px; /* Aumentando o tamanho da fonte */
+  color: #333; /* Mudando a cor do texto para um tom mais escuro */
+  margin-bottom: 15px;
+  text-align: center; /* Centralizando o título */
+}
+
+.page_table__71QjM {
+  background-color: #F7F2E8;
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden; /* Para garantir que as bordas arredondadas sejam visíveis */
+}
+
+.page_tableHeader__bN6Hs {
+  padding: 12px;
+  text-align: left;
+  font-weight: bold; /* Destacando o texto do cabeçalho */
+}
+
+.page_tableRow__ONhyR {
+  border-bottom: 1px solid #f3ead8;
+  transition: background-color 0.3s; /* Suavizando a transição ao passar o mouse */
+}
+
+.page_tableRow__ONhyR:hover {
+  background-color: #e0e0e0; /* Cor de fundo mais clara ao passar o mouse */
+}
+
+.page_editButton__XqFB4, .page_deleteButton__Vg31V {
+  margin-right: 5px;
+  padding: 8px 12px; /* Aumentando o padding para botões mais confortáveis */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold; /* Destacando o texto dos botões */
+  transition: background-color 0.3s; /* Suavizando a transição ao passar o mouse */
+}
+
+.page_editButton__XqFB4 {
+  background-color: #fa5c01; /* Laranja */
+  color: #ffffff;
+}
+
+.page_editButton__XqFB4:hover {
+  background-color: #e04e00; /* Cor mais escura ao passar o mouse */
+}
+
+.page_deleteButton__Vg31V {
+  background-color: #f44336; /* Vermelho */
+  color: #ffffff;
+}
+
+.page_deleteButton__Vg31V:hover {
+  background-color: #d32f2f; /* Cor mais escura ao passar o mouse */
+}
+
+.page_containersTotais__EYeMg {
+  display: flex;
+  margin-top: 0px;
+  gap: 40px;
+  justify-content: center;
+}
+
+.page_ganhos__RYkP0, .page_gastos__9TD6O { /* CONTAINER QUE FICA EM VOLTA DO GANHOS TOTAIS/GASTOS TOTAIS */
+  background-color: #f7f2e8;
+  width: 455px;
+  height: 115px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.page_ganhos__RYkP0 p, .page_gastos__9TD6O p { /* TITULO GANHOS/GASTOS TOTAIS */
+  font-size: 24px;
+  color: #f4882a;
+  margin-bottom: 0px;
+}
+
+.page_containersTotais__EYeMg .page_valorGanhos__R7BX5 {
+  color: #08b505;
+  font-weight: bold;
+  font-size: 37px;
+  padding-bottom: 20px;
+  margin-top: 10px;
+}
+
+.page_containersTotais__EYeMg .page_valorGastos__gdXR2 {
+  color: #f92f2f;
+  font-weight: bold;
+  font-size: 37px;
+  padding-bottom: 20px;
+  margin-top: 10px;
+}
+
+
