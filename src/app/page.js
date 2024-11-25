@@ -237,7 +237,10 @@ export default function Home() {
     </thead>
     <tbody>
       {records.map((record, index) => (
-        <tr key={index} className={styles.tableRow}>
+        <tr key={index} className={`${styles.tableRow} ${
+          record.type === "Entrada" ? styles.entradaRow : styles.saidaRow
+        }`}>
+        
           <td>{record.type}</td>
           <td>{record.value}</td>
           <td>{record.categories ? record.categories.join(", ") : ""}</td>
@@ -255,3 +258,4 @@ export default function Home() {
     </div>
   );
 }
+

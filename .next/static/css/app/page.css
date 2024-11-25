@@ -98,15 +98,15 @@
   width: 100%;
 }
 
-.page_button__vnlhW {
+.page_button__vnlhW, .page_editButton__XqFB4, .page_deleteButton__Vg31V {
   /* Estilos existentes para o botão */
   background-color: rgb(255, 255, 255); /* Cor de fundo escura */
   color: rgb(8, 8, 8); /* Cor do texto em branco para contraste */
-  border: none;
-  padding: 10px 20px;
+  border: 2px solid orange; /* Adiciona bordas laranjas */
+  padding: 8px 16px; /* Diminui o padding para reduzir o tamanho do botão */
   cursor: pointer;
   transition: background-color 0.3s, box-shadow 0.3s; /* Para uma transição suave */
-  border-radius: 5px; /* Adiciona bordas arredondadas */
+  border-radius: 4px; /* Diminui o border-radius para bordas menos arredondadas */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
 }
 
@@ -122,7 +122,7 @@
 .page_editButton__XqFB4 {
   /* Estilos específicos para o botão de editar */
   background-color: orange; /* Cor de fundo padrão */
-  color: white; /* Cor do texto */
+  color: rgb(14, 2, 2); /* Cor do texto */
   border: none;
   padding: 10px 20px;
   cursor: pointer;
@@ -203,70 +203,97 @@
  
 /* PARTE DE REGISTROS */
 .page_container__aoG4z {
-  width: 963px;
-  height: 785px;
-  margin-top: 20px;
-  padding: 0px;
-  background-color: white; /* Adicionando um fundo para destacar a tabela */
-  border-radius: 10px; /* Arredondando os cantos da caixa */
+  width: 90%; /* Tornando a largura responsiva */
+  max-width: 963px; /* Limite máximo de largura */
+  height: auto; /* Altura automática para melhor responsividade */
+  margin-top: 40px; /* 20 pixels de margem à esquerda */
+  background-color: #ffffff;
+  border-radius: 10px;
 }
 
 .page_title__3jonF {
-  font-size: 26px; /* Aumentando o tamanho da fonte */
-  color: #333; /* Mudando a cor do texto para um tom mais escuro */
-  margin-bottom: 15px;
-  text-align: center; /* Centralizando o título */
+  font-size: 28px; /* Aumentando o tamanho da fonte */
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .page_table__71QjM {
-  background-color: #F7F2E8;
+  background-color: #3f3d3a;
   width: 100%;
   border-collapse: collapse;
   border-radius: 10px;
-  overflow: hidden; /* Para garantir que as bordas arredondadas sejam visíveis */
+  overflow: hidden;
 }
 
 .page_tableHeader__bN6Hs {
   padding: 12px;
   text-align: left;
-  font-weight: bold; /* Destacando o texto do cabeçalho */
+  font-weight: bold;
+  background-color: #f3ead8; /* Fundo diferente para o cabeçalho */
+  color: #333;
 }
 
 .page_tableRow__ONhyR {
-  border-bottom: 1px solid #f3ead8;
-  transition: background-color 0.3s; /* Suavizando a transição ao passar o mouse */
+  border: 2px solid orange;
+  border-radius: 8px;
+  background-color: white;
+  transition: background-color 0.3s, transform 0.2s; /* Suavizando a transição */
+  margin-bottom: 10px;
 }
 
 .page_tableRow__ONhyR:hover {
-  background-color: #e0e0e0; /* Cor de fundo mais clara ao passar o mouse */
+  background-color: #d3d3d3; /* Cor de fundo mais clara ao passar o mouse */
+  transform: scale(1.02); /* Efeito de aumento ao passar o mouse */
+}
+
+.page_entradaRow__gsmBM {
+  color: #08b505; /* Cor verde para entradas */
+  font-weight: bold;
+}
+
+.page_saidaRow__dvMI_ {
+  color: #f92f2f; /* Cor vermelha para saídas */
+  font-weight: bold;
 }
 
 .page_editButton__XqFB4, .page_deleteButton__Vg31V {
   margin-right: 5px;
-  padding: 8px 12px; /* Aumentando o padding para botões mais confortáveis */
+  padding: 10px 15px; /* Aumentando o padding para botões mais confortáveis */
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-weight: bold; /* Destacando o texto dos botões */
-  transition: background-color 0.3s; /* Suavizando a transição ao passar o mouse */
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s; /* Suavizando a transição */
 }
 
 .page_editButton__XqFB4 {
-  background-color: #fa5c01; /* Laranja */
+  background-color: orange;
   color: #ffffff;
 }
 
 .page_editButton__XqFB4:hover {
-  background-color: #e04e00; /* Cor mais escura ao passar o mouse */
+  background-color: #e04e00;
+  transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
 }
 
 .page_deleteButton__Vg31V {
-  background-color: #f44336; /* Vermelho */
+  background-color: #f44336;
   color: #ffffff;
 }
 
 .page_deleteButton__Vg31V:hover {
-  background-color: #d32f2f; /* Cor mais escura ao passar o mouse */
+  background-color: #d32f2f;
+  transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+/* Adicionando estilos para melhorar a acessibilidade */
+.page_tableRow__ONhyR:focus {
+  outline: 2px solid orange; /* Destaque para acessibilidade */
+}
+
+.page_editButton__XqFB4:focus, .page_deleteButton__Vg31V:focus {
+  outline: 2px solid #ffffff; /* Destaque para acessibilidade nos botões */
 }
 
 .page_containersTotais__EYeMg {
@@ -309,5 +336,3 @@
   padding-bottom: 20px;
   margin-top: 10px;
 }
-
-

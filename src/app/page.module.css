@@ -95,15 +95,15 @@
   width: 100%;
 }
 
-.button {
+.button, .editButton, .deleteButton {
   /* Estilos existentes para o botão */
   background-color: rgb(255, 255, 255); /* Cor de fundo escura */
   color: rgb(8, 8, 8); /* Cor do texto em branco para contraste */
-  border: none;
-  padding: 10px 20px;
+  border: 2px solid orange; /* Adiciona bordas laranjas */
+  padding: 8px 16px; /* Diminui o padding para reduzir o tamanho do botão */
   cursor: pointer;
   transition: background-color 0.3s, box-shadow 0.3s; /* Para uma transição suave */
-  border-radius: 5px; /* Adiciona bordas arredondadas */
+  border-radius: 4px; /* Diminui o border-radius para bordas menos arredondadas */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
 }
 
@@ -119,7 +119,7 @@
 .editButton {
   /* Estilos específicos para o botão de editar */
   background-color: orange; /* Cor de fundo padrão */
-  color: white; /* Cor do texto */
+  color: rgb(14, 2, 2); /* Cor do texto */
   border: none;
   padding: 10px 20px;
   cursor: pointer;
@@ -200,70 +200,97 @@
  
 /* PARTE DE REGISTROS */
 .container {
-  width: 963px;
-  height: 785px;
-  margin-top: 20px;
-  padding: 0px;
-  background-color: white; /* Adicionando um fundo para destacar a tabela */
-  border-radius: 10px; /* Arredondando os cantos da caixa */
+  width: 90%; /* Tornando a largura responsiva */
+  max-width: 963px; /* Limite máximo de largura */
+  height: auto; /* Altura automática para melhor responsividade */
+  margin-top: 40px; /* 20 pixels de margem à esquerda */
+  background-color: #ffffff;
+  border-radius: 10px;
 }
 
 .title {
-  font-size: 26px; /* Aumentando o tamanho da fonte */
-  color: #333; /* Mudando a cor do texto para um tom mais escuro */
-  margin-bottom: 15px;
-  text-align: center; /* Centralizando o título */
+  font-size: 28px; /* Aumentando o tamanho da fonte */
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .table {
-  background-color: #F7F2E8;
+  background-color: #3f3d3a;
   width: 100%;
   border-collapse: collapse;
   border-radius: 10px;
-  overflow: hidden; /* Para garantir que as bordas arredondadas sejam visíveis */
+  overflow: hidden;
 }
 
 .tableHeader {
   padding: 12px;
   text-align: left;
-  font-weight: bold; /* Destacando o texto do cabeçalho */
+  font-weight: bold;
+  background-color: #f3ead8; /* Fundo diferente para o cabeçalho */
+  color: #333;
 }
 
 .tableRow {
-  border-bottom: 1px solid #f3ead8;
-  transition: background-color 0.3s; /* Suavizando a transição ao passar o mouse */
+  border: 2px solid orange;
+  border-radius: 8px;
+  background-color: white;
+  transition: background-color 0.3s, transform 0.2s; /* Suavizando a transição */
+  margin-bottom: 10px;
 }
 
 .tableRow:hover {
-  background-color: #e0e0e0; /* Cor de fundo mais clara ao passar o mouse */
+  background-color: #d3d3d3; /* Cor de fundo mais clara ao passar o mouse */
+  transform: scale(1.02); /* Efeito de aumento ao passar o mouse */
+}
+
+.entradaRow {
+  color: #08b505; /* Cor verde para entradas */
+  font-weight: bold;
+}
+
+.saidaRow {
+  color: #f92f2f; /* Cor vermelha para saídas */
+  font-weight: bold;
 }
 
 .editButton, .deleteButton {
   margin-right: 5px;
-  padding: 8px 12px; /* Aumentando o padding para botões mais confortáveis */
+  padding: 10px 15px; /* Aumentando o padding para botões mais confortáveis */
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-weight: bold; /* Destacando o texto dos botões */
-  transition: background-color 0.3s; /* Suavizando a transição ao passar o mouse */
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s; /* Suavizando a transição */
 }
 
 .editButton {
-  background-color: #fa5c01; /* Laranja */
+  background-color: orange;
   color: #ffffff;
 }
 
 .editButton:hover {
-  background-color: #e04e00; /* Cor mais escura ao passar o mouse */
+  background-color: #e04e00;
+  transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
 }
 
 .deleteButton {
-  background-color: #f44336; /* Vermelho */
+  background-color: #f44336;
   color: #ffffff;
 }
 
 .deleteButton:hover {
-  background-color: #d32f2f; /* Cor mais escura ao passar o mouse */
+  background-color: #d32f2f;
+  transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+/* Adicionando estilos para melhorar a acessibilidade */
+.tableRow:focus {
+  outline: 2px solid orange; /* Destaque para acessibilidade */
+}
+
+.editButton:focus, .deleteButton:focus {
+  outline: 2px solid #ffffff; /* Destaque para acessibilidade nos botões */
 }
 
 .containersTotais {
@@ -306,4 +333,3 @@
   padding-bottom: 20px;
   margin-top: 10px;
 }
-

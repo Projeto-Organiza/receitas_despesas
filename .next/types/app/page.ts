@@ -1,4 +1,4 @@
-// File: C:\Users\jessie\Downloads\receitas_despesas-main-modificando\src\app\page.js
+// File: C:\Users\jessie\Downloads\new\receitas_despesas-main\src\app\page.js
 import * as entry from '../../../src/app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
